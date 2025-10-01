@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 8%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(0, 0%, 8%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(248, 100%, 34%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(248, 100%, 20%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(248, 100%, 34%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(248, 100%, 40%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 20%);
+  --ring: hsl(248, 100%, 34%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(0, 0%, 8%);
+  --sidebar-foreground: hsl(0, 0%, 95%);
+  --sidebar-primary: hsl(248, 100%, 34%);
+  --sidebar-primary-foreground: hsl(0, 0%, 0%);
+  --sidebar-accent: hsl(248, 100%, 34%);
+  --sidebar-accent-foreground: hsl(0, 0%, 95%);
+  --sidebar-border: hsl(0, 0%, 20%);
+  --sidebar-ring: hsl(248, 100%, 34%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+  --shadow-xs: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+  --shadow-sm: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 1px 2px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 1px 2px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-md: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 2px 4px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-lg: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 4px 6px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-xl: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 8px 10px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-2xl: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(0, 0%, 8%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(0, 0%, 8%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(248, 100%, 34%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(248, 100%, 20%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(248, 100%, 34%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(248, 100%, 40%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 20%);
+  --ring: hsl(248, 100%, 34%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(0, 0%, 8%);
+  --sidebar-foreground: hsl(0, 0%, 95%);
+  --sidebar-primary: hsl(248, 100%, 34%);
+  --sidebar-primary-foreground: hsl(0, 0%, 0%);
+  --sidebar-accent: hsl(248, 100%, 34%);
+  --sidebar-accent-foreground: hsl(0, 0%, 95%);
+  --sidebar-border: hsl(0, 0%, 20%);
+  --sidebar-ring: hsl(248, 100%, 34%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+  --shadow-xs: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+  --shadow-sm: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 1px 2px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 1px 2px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-md: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 2px 4px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-lg: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 4px 6px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-xl: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05), 0px 8px 10px -1px hsl(248, 100%, 34%, 0.05);
+  --shadow-2xl: 0px 2px 0px 0px hsl(248, 100%, 34%, 0.05);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.glow-text {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(24, 0, 173, 0.1), 0 0 20px rgba(24, 0, 173, 0.1);
+}
+
+.neon-border {
+  border: 1px solid transparent;
+  background: linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%)) padding-box,
+              linear-gradient(45deg, hsl(248, 100%, 34%), hsl(248, 100%, 20%)) border-box;
+}
+
+.search-glow:focus {
+  box-shadow: 0 0 20px rgba(24, 0, 173, 0.3);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* Falling Red Dots Animation */
+.falling-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.falling-dots::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, hsl(248, 100%, 34%), transparent),
+    radial-gradient(2px 2px at 40px 70px, hsl(248, 100%, 34%), transparent),
+    radial-gradient(1px 1px at 90px 40px, hsl(248, 100%, 34%), transparent),
+    radial-gradient(1px 1px at 130px 80px, hsl(248, 100%, 34%), transparent),
+    radial-gradient(2px 2px at 160px 30px, hsl(248, 100%, 34%), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: falling-dots-animation 15s linear infinite;
+}
+
+.falling-dots::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(1px 1px at 60px 10px, hsl(248, 100%, 20%), transparent),
+    radial-gradient(2px 2px at 100px 50px, hsl(248, 100%, 20%), transparent),
+    radial-gradient(1px 1px at 140px 20px, hsl(248, 100%, 20%), transparent),
+    radial-gradient(1px 1px at 180px 60px, hsl(248, 100%, 20%), transparent);
+  background-repeat: repeat;
+  background-size: 250px 120px;
+  animation: falling-dots-animation 20s linear infinite;
+  animation-delay: -10s;
+}
+
+@keyframes falling-dots-animation {
+  0% {
+    transform: translateY(-100vh) rotateZ(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotateZ(360deg);
+    opacity: 0;
+  }
+}
